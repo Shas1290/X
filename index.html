@@ -11,10 +11,10 @@
 
 </head>
 
-<body class="bg-black h-full text-white m-0 p0 overflow-x-hidden">
+<body class="bg-black h-full text-white m-0 p-0 overflow-x-hidden">
   <div class=" grid grid-cols-1 md:grid-cols-[250px_minmax(0,1fr)_320px] max-w-screen-xl mx-auto gap-0">
     <!-- Left Sidebar -->
-    <aside class=" hidden md:block w-[250px] pl-1 pr-5 font-semibold">
+    <aside class=" hidden md:block w-[320px] px-4">
       <div class="logo p-2 rounded-full hover:bg-zinc-900 hover:cursor-pointer w-12 h-12  transition-all duration-50 flex items-center justify-center mt-1 mb-1">
         <svg viewBox="0 0 24 24"  class=" w-10 h-10  pl-1   invert">
           <g>
@@ -73,7 +73,7 @@
         
       </div>
     </aside>
-    <main class="second border-x border-gray-600 w-full px-4 pb-[calc(56px+env(safe-area-inset-bottom))] md:pb-0">
+    <main class="second border-x border-gray-600 w-full px-4 pb-[calc(64px+env(safe-area-inset-bottom))] md:pb-0 min-h-[100dvh]">
 <div class="border border-gray-600 h-16 w-[calc(100%+2rem)] -mx-4">
   <div class="flex p-5 justify-center  gap-40">
    
@@ -143,8 +143,8 @@
 
 </div>
 <p class="ml-16 -mt-6 text-blue-600">#Bitcoin</p>
-<img src="istockphoto-1313455188-612x612.jpg" alt="" class="w-[85%] h-[480px] ml-6 md:ml-16 mt-3 rounded-2xl">
-<div class="flex gap-5 md:gap-24">
+<img src="istockphoto-1313455188-612x612.jpg" alt="" class="w-[260px]  md:w-[640px] h-auto mx-auto mt-3 ml-6 md:ml-16  rounded-2xl">
+<div class="flex mx-auto max-w-[640px] px-4 mt-2 items-center justify-between  ">
 <span class=" cursor-pointer text-gray-400">
   <svg class="w-6 h-6 ml-16 mt-3"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
   <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
@@ -176,16 +176,7 @@
 </div>
 
 </main>
-<!-- Mobile bottom nav -->
-<ul class="md:hidden fixed inset-x-0 bottom-0 z-50 h-14
-           flex flex-row justify-around items-center
-           bg-black/95 backdrop-blur border-t border-zinc-800
-           px-4 py-3 pb-[env(safe-area-inset-bottom)]">
-  <li class="p-2"><span class="material-symbols-outlined">home</span></li>
-  <li class="p-2"><span class="material-symbols-outlined">search</span></li>
-  <li class="p-2"><span class="material-symbols-outlined">notifications</span></li>
-  <li class="p-2"><span class="material-symbols-outlined">person</span></li>
-</ul>
+
     <aside class="third hidden md:block w-[32%]  px-4">
       <div class="search mt-1">
         <div class="flex items-center border border-gray-700  bg-transparent focus-within:border-blue-500 px-4 py-2 rounded-full w-80 mx-auto">
@@ -278,6 +269,20 @@
       </div>
     </div>
   </aside>
+  <!-- Mobile bottom nav -->
+<ul class="md:hidden fixed inset-x-0 bottom-0 z-50 h-16
+flex flex-row justify-around items-center
+bg-black/95 backdrop-blur border-t border-zinc-800
+ pb-[env(safe-area-inset-bottom)]">
+<li class="p-2"><span class="material-symbols-outlined">home</span></li>
+<li class="p-2"><span class="material-symbols-outlined">search</span></li>
+<li class="p-2"><span class="material-symbols-outlined">notifications</span></li>
+<li class="p-2"><span class="material-symbols-outlined">person</span></li>
+</ul>
+
+
+
 </body>
+
 
 </html>
